@@ -1,0 +1,23 @@
+.MainLayout {
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    /* justify-content: space-around; */
+    padding: 1rem;
+    /* border: 2px solid black; */
+    height: 96vh;
+}
+
+.MainLayout__leftSection {
+    width: 30vw;
+    background-color: #ffffff;
+    /* border: 2px solid blue; */
+    /* height: 9vh; */
+}
+
+.MainLayout__rightSection {
+    width: 70vw;
+    /* border: 2px solid red; */
+    background-color: #f8f8f8;
+    /* height: 92vh; */
+}

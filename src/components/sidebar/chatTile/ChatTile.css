@@ -1,0 +1,56 @@
+.ChatTile {
+    display: flex;
+    flex-direction: row;
+    padding: 0.75rem;
+    align-items: center;
+    height: 3rem;
+}
+
+.ChatTile__avatar {
+    width: 2.5rem;
+    /* padding-right: 0.85rem; */
+}
+
+.ChatTile__center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 2px solid red; */
+    padding-left: 0.85rem;
+    width: 65%;
+}
+
+.ChatTile__name {
+    font-size: 1rem;
+    color: #111b21;
+}
+
+.ChatTile__lastMessage {
+    padding-top: 0.15rem;
+    font-size: 0.875rem;
+    color: #667781;
+}
+
+.ChatTile__end {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 20%;
+    /* border: 2px dashed blue; */
+}
+
+.ChatTile__date {
+    font-size: 0.75rem;
+    color: #667781;
+}
+
+.ChatTile__end--icons {
+    color: #8696a0;
+    margin-top: 2px;
+}
+
+.ChatTile__divider {
+    padding-left: 4.2rem;
+    width: 85%;
+}
