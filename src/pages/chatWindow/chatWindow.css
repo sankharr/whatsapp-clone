@@ -1,0 +1,116 @@
+.ChatWindow {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    
+
+}
+
+.ChatWindow__header {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--Sidebar-header);
+    height: 1.5rem;
+    width: auto;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    align-items: center;
+    padding-right: 1rem;
+    border-left: 1px solid #d1d7db;
+
+}
+
+.ChatWindow__avatar {
+    display: flex;
+    width: 40px;
+}
+
+.ChatWindow__headerMiddleSection {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    width: 40%;
+}
+
+.ChatWindow__name {
+    font-size: 1rem;
+}
+
+.ChatWindow__status {
+    font-size: 0.75rem;
+    color: #667781;
+    padding-top: 0.25rem;
+
+}
+
+.ChatWindow__header--rightCorner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 55%;
+    height: inherit;
+
+}
+
+.ChatWindow__header--rightCornerIcon {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-left: 1rem;
+    color: #54656f;
+    font-size: 1.5rem;
+}
+
+.ChatWindow__messageDisplay {
+    min-height: 20rem;
+    flex-grow: 1;
+    background-image: url('../../assets/chatBackground.jpeg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat;
+    padding-top: 1rem;
+    /* opacity: 30%; */
+}
+
+.ChatWindow__messageSend {
+    display: flex;
+    flex-direction: row;
+    padding: 0.75rem 1.25rem 0.75rem 1.25rem;
+    align-items: center;
+    background-color: #f0f2f5;
+    /* border: 2px solid green; */
+}
+
+.ChatWindow__messageSendIcons {
+    font-size: 2rem;
+    padding-right: 1rem;
+    color: #54656f;
+}
+
+.ChatWindow__searchArea {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 100%;
+    font-size: larger;
+
+}
+
+.ChatWindow__inputField {
+    background-color: unset;
+    border: unset;
+    font-size: 15px;
+    width: 100%;
+    height: 1.4rem;
+    color: #677882;
+}
+
+.ChatWindow__messageSend--VoiceIcon {
+    font-size: 2rem;
+    padding-left: 1rem;
+    color: #54656f;
+}

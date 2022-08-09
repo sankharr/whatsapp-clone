@@ -2,6 +2,9 @@
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
+    /* border: 2px solid green; */
+    flex-grow: 1;
+    
 }
 
 .Sidebar__header {
@@ -10,7 +13,7 @@
     background-color: var(--Sidebar-header);
     height: 1.5rem;
     width: auto;
-    /* border: 2px solid green; */
+    
     padding-top: 1rem;
     padding-left: 1rem ;
     padding-bottom: 1rem;
@@ -80,4 +83,6 @@
 .Sidebar__chatList {
     display: flex;
     flex-direction: column;
+    /* border: 2px solid green; */
+    /* flex-grow: 1; */
 }

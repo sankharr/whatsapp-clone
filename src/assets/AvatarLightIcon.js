@@ -1,8 +1,8 @@
-export const AvatarIcon = ({ width, height }) => {
+export const AvatarLightIcon = ({ width, height }) => {
   return (
     <svg viewBox="0 0 212 212" width={width} height={height} className="">
       <path
-        fill="#54656f"
+        fill="#dfe5e7"
         className="background"
         d="M106.251.5C164.653.5 212 47.846 212 106.25S164.653 212 106.25 212C47.846 212 .5 164.654.5 106.25S47.846.5 106.251.5z"
       ></path>

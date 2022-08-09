@@ -1,23 +1,43 @@
 .MainLayout {
     display: flex;
     flex-direction: row;
+    align-items: stretch;
+    justify-content: stretch;
     /* align-items: center; */
     /* justify-content: space-around; */
-    padding: 1rem;
+    /* padding: 1rem; */
     /* border: 2px solid black; */
-    height: 96vh;
+    height: 100vh;
+    /* height: 96vh; */
+    /* flex: 2; */
+}
+
+.MainLayout__background--greenStripe {
+    position: absolute;
+    z-index: -1;
+    height: 7.938rem;
+    width: 100%;
+    background-color: #3da784;
 }
 
 .MainLayout__leftSection {
-    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
     background-color: #ffffff;
+    flex-grow: 2;
+    margin: 1rem 0 1rem 1rem;
     /* border: 2px solid blue; */
     /* height: 9vh; */
 }
 
 .MainLayout__rightSection {
-    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    /* flex-grow: 2; */
     /* border: 2px solid red; */
     background-color: #f8f8f8;
+    margin: 1rem 1rem 1rem 0;
     /* height: 92vh; */
 }

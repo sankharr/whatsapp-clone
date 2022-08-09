@@ -3,24 +3,29 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 
 // styling
-import './MainLayout.css';
+import "./MainLayout.css";
 
 // components
 import Sidebar from "../components/sidebar/Sidebar";
 
 function MainLayout() {
   return (
-    <div className="MainLayout">
-      {/* left section */}
-      <div className="MainLayout__leftSection">
-        <Sidebar />
-      </div>
+    <>
+      {/* background */}
+      <div className="MainLayout__background--greenStripe"></div>
+      
+      <div className="MainLayout">
+        {/* left section */}
+        <div className="MainLayout__leftSection">
+          <Sidebar />
+        </div>
 
-      {/* right section */}
-      <div className="MainLayout__rightSection">
-        <Outlet />
+        {/* right section */}
+        <div className="MainLayout__rightSection">
+          <Outlet />
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 

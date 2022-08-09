@@ -6,6 +6,10 @@
     height: 3rem;
 }
 
+.ChatTile:hover {
+    background-color: #f0f2f5;
+}
+
 .ChatTile__avatar {
     width: 2.5rem;
     /* padding-right: 0.85rem; */
@@ -23,12 +27,27 @@
 .ChatTile__name {
     font-size: 1rem;
     color: #111b21;
+    font-weight: 500;
 }
 
 .ChatTile__lastMessage {
+    display: flex;
+    flex-direction: row;
     padding-top: 0.15rem;
     font-size: 0.875rem;
     color: #667781;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.ChatTile__lastMessageStatus {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 0.975rem;
+    padding-top: 0.1rem;
+    margin-right: 0.1rem;
+    /* justify-content: center; */
 }
 
 .ChatTile__end {
