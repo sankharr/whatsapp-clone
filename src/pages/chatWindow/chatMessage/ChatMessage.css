@@ -1,6 +1,7 @@
 .ChatMessage {
     display: flex;
     padding: 0 6rem;
+    position: relative;
     /* border: 1px solid black; */
     /* align-items: center; */
     /* justify-content: flex-end; */

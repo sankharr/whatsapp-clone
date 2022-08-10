@@ -39,13 +39,20 @@ function ChatWindow() {
         </div>
       </div>
       <div className="ChatWindow__messageDisplay">
+        {/* <div className='ChatWindow__backgroundImage'></div> */}
+        <div className="ChatWindow__backgroundImageContainer">
+          <img src={chatBackground} className="ChatWindow__backgroundImage" />
+          <img src={chatBackground} className="ChatWindow__backgroundImage" />
+        </div>
+        <div className="ChatWindow__messageList">
         {userData?.messages.map((message, index) => (
           <ChatMessage
             key={message.content + index.toString()}
             chatData={message}
-            lastMessageOwner={userData.messages[index-1]?.sentBy}
+            lastMessageOwner={userData.messages[index - 1]?.sentBy}
           />
         ))}
+        </div>
       </div>
       <div className="ChatWindow__messageSend">
         <MdOutlineEmojiEmotions className="ChatWindow__messageSendIcons" />

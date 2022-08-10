@@ -65,12 +65,36 @@
 .ChatWindow__messageDisplay {
     min-height: 20rem;
     flex-grow: 1;
-    background-image: url('../../assets/chatBackground.jpeg');
+    overflow: hidden;
+    position: relative;
+    /* background-image: url('../../assets/chatBackground.jpeg');
     background-position: center;
     background-size: contain;
-    background-repeat: repeat;
-    padding-top: 1rem;
+    background-repeat: repeat; */
+
+    
+    /* z-index: 0; */
     /* opacity: 30%; */
+}
+
+.ChatWindow__backgroundImageContainer {
+    display: flex;
+    position: absolute;
+    height: auto;
+    
+}
+
+.ChatWindow__messageList {
+    padding-top: 1rem;
+}
+
+.ChatWindow__backgroundImage {
+    opacity: 0.3;
+    
+    width: 55%;
+    
+    object-position: center;
+    object-fit: fill;
 }
 
 .ChatWindow__messageSend {
